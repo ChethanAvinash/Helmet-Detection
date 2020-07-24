@@ -2,7 +2,6 @@ import sys
 import os
 import glob
 import re
-import numpy as np
 
 # Flask utils
 from flask import Flask, redirect, url_for, request, render_template
@@ -43,4 +42,4 @@ def new():
 
 
 if __name__ == '__main__':
-    app.run(port=4994,debug=True)
+    app.run(host="0.0.0.0",port=5000)
